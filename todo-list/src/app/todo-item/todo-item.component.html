@@ -1,0 +1,8 @@
+<div>
+    <h3 [ngClass]="{'strike':!todo.active}">{{todo.title}}</h3>
+    <p>{{todo.desc}}</p>
+    <input type="checkbox" name="check" id="check" (click)="onCheckBoxClick()">
+    <label for="chek">Toggle Done</label>
+    <button type="submit" class="d-btn" (click)="deleteTodo()">Delete</button>
+</div>
+<app-edit-todo></app-edit-todo>
